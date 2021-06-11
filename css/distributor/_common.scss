@@ -1,0 +1,238 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@font-face{
+    font-family: 'Streamster'; src: url(../fonts/Streamster.ttf), url(../fonts/Streamster.otf);
+}
+*{
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; font-size: 1.4rem; color: #929292; line-height: 2.3rem; background-color: #fff; font-weight: 300;
+}
+html{
+    font-size: 62.5%;
+}
+p{
+    margin: 0; padding: 0; 
+}
+
+h1, h2, h3, h3, h4, h5, h6{
+    margin: 0; padding: 0; font-weight: 600; color: #27272f;     letter-spacing: -1px;
+}
+ul, li{
+    margin: 0; padding: 0;list-style: none;
+}
+a{
+    text-decoration: none; color: #000;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    margin: 0; padding: 0;
+}
+
+.pt{
+    padding-top: 8rem;
+}
+.pb{
+    padding-bottom: 8rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.stylish_heading{
+    font-family: 'Streamster'; 
+}
+
+.custom_heading{
+    width: 100%; padding-bottom: 3rem; position: relative;
+    &::after{
+        width: 6.9rem; height: 2.2rem; background-image: url(../images/leaves.png); background-size: contain; position: absolute; bottom: 0; left: 0;  margin: auto; content: "";
+    }
+    &.center{
+        text-align: center; 
+        &::after{
+            right: 0;
+        }
+    }
+    &.left{
+        text-align: left;
+    }
+    .stylish_heading{
+        color: #46963d; font-size: 2.3rem; font-weight: 500; margin-bottom: 1.5rem;  letter-spacing: .5rem;
+    }
+    h2{
+        font-size: 3.6rem; text-transform: capitalize; letter-spacing: -1px;
+    }
+}
+
+.common{
+    p{
+        margin: 2rem 0;
+    }
+}
+
+
+.custom_button{
+    margin: 0; padding: 0; display: inline-block;
+    a{
+         height: 6.6rem; width: 24rem; background-color: #ffffff; color: #6d604c; line-height: 6.2rem; text-transform: uppercase; font-size: 2.1rem; display: block; transition: all .3s ease-in; text-align: center; padding: 0 0 0 3.5rem ; position: relative; border: #6d604c 2px solid; border-radius: 5rem; font-weight: normal; text-align: left;
+         &::after{
+             background-image: url(../images/arrow.png); width: 3rem; height: 1.3rem; background-size: contain; position: absolute; top: 0; bottom: 0; right: 3.2rem; margin: auto; content: ""; 
+         }
+        &:hover{
+             background-color: #46963d; color: #fff; border-color: #46963d;
+        }
+    }
+}
+
+.breadcrumb {
+    margin-top: 6rem;
+}
+
+
+.popup_details_back{
+   
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 9999; opacity: 0; visibility: hidden; transition: all .3s ease-in;
+    .back{
+        width: 30%; background-color: #fff; box-shadow: rgba(0,0,0,.2) 1px 0 2rem; padding: 3rem 3rem 3rem 3rem; z-index: 9999; text-align: center; position: relative;
+        .cross{
+            width: 5rem; height: 5rem; background-color: red; border-radius: 100%; box-shadow: rgba(0,0,0,.2) 1px 0 1.5rem; cursor: pointer; position: absolute; right: -1.8rem; top: -2.6rem;
+        }
+    }
+    .image_back{
+        width: 100%;
+        img{
+            display: block;
+        }
+    }
+    h2{
+        color: #4e4e4e; font-size: 2.8rem; font-weight: normal; margin-bottom: 2.5rem; text-transform: uppercase;
+    }
+    p{
+        width: 100%; font-size: 1.5rem; color: #6d604c; width: 80%; display: inline-block;
+    }
+    .price{
+        color: #46963d; font-size: 1.7rem; font-weight: normal; margin-top: 3.5rem;
+    }
+    .button_details_back{
+        
+        width: 100%; margin-top: 3rem;
+        .incre_decre_back{
+            width: 14.2rem; height: 3.9rem; border-radius: 5rem; border: #b6b6b6 1px solid; text-align: center; position: relative; display: flex; align-items: center; justify-content: center; margin-right: 1rem;
+            span{
+                color: #b6b6b6; font-size: 1.3rem; font-weight: 600; 
+            }
+            .minus, .plus{
+                position: absolute; top: 0; bottom: 0;  background-color: #ececec; width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; color: #393939; font-size: 1.3rem; font-weight: 600; margin: auto; border-radius: 100%; cursor: pointer;
+            }
+            .plus{
+                right: 4px; 
+            }
+            .minus{
+               left: 4px;
+            }
+        }
+        .view_button{
+            a{
+                width: 9rem; height: 3.9rem; border-radius: 5rem; display: flex; align-items: center; justify-content: center; background-color: #6d604c;
+                 color: #fff; font-size: 11px; text-transform: uppercase; transition: all .3s ease-in;
+                 &:hover{
+                    background-color: #46963d; 
+                 }
+            }
+            &.del{
+                margin-left: 1rem;
+            }
+        }
+    }
+    &.open{
+        opacity: 1; visibility: visible;
+    }
+}
+
+.blur_back{
+    backdrop-filter: saturate(180%) blur(24px); width: 100%; height: 100%; background-color: rgba(255,255,255,.3); position: fixed; top: 0; left: 0; z-index: 999; opacity: 0; visibility: hidden; transition: all .3s ease-in;
+    &.open{
+        opacity: 1; visibility: visible;
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .container2{
+        max-width: 100%; width: 100%;     padding: 0 7.6rem;
+    } 
+    .popup_details_back{
+        .back{
+            width: 60%;
+        }
+        .button_details_back{
+            .view_button{
+                a{
+                    width: 14rem; 
+                }
+            }
+        }
+    }   
+}
+
+@media only screen and (max-width:600px){
+    
+    .popup_details_back{
+        .back{
+            width: 90%;
+        }
+        .image_back{
+            img{
+                width: 100%;
+            }
+        }
+        .button_details_back{
+            .view_button{
+                a{
+                    width: 12rem;
+                }
+            }
+        }
+    }   
+}
+
+@media only screen and (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        padding: 0 15px;
+    }
+    
+    
+}
+@media only screen and (max-width:1023px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 47.5%;
+    }
+    .container2{
+        max-width: 100%; width: 100%;     padding: 0 2rem;
+    } 
+    body{
+        font-size: 1.8rem;
+    }
+   
+}
+@media only screen and (max-width:450px){
+    html{
+        font-size: 40%;
+    }
+    
+}

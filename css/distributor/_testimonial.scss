@@ -1,0 +1,50 @@
+.testimonial_back{
+    width: 100%; text-align: center;
+    p{
+        width: 65%; display: inline-block;  margin-top: 2rem;
+    }
+    .main_details{
+        width: 100%;
+        .portion{
+            width: 100%; background-color: #f4f9f0; padding: 4rem 1rem; border-radius: 2rem;
+            .avator_back{
+                width: 100%; text-align: center; position: relative; z-index: 1;
+                &::after{
+                    width: 80%; height: 1px; background-color: #d3ddd2; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; content: ""; z-index: -1;
+                }
+                .image{
+                    display: inline-block;  position: relative;
+                    
+                    img{
+                        width: 8rem; height: 8rem; border-radius: 100%; 
+                    }
+                    &::before{
+                        background-image: url(../images/quote.png); width: 2.5rem; height: 2.5rem; position: absolute; top: .7rem; right: -.5rem; content: ""; background-size: contain;
+                    }
+                }
+            }
+            p{
+                width: 100%; font-size: 1.5rem; margin-top:4rem ; margin-bottom:4rem ;
+            }
+            h3{
+                color: #46963d; font-size: 1.6rem; font-weight: normal; letter-spacing: 0;
+            }
+            h5{
+                color: #929292; font-size: 1.4rem; font-weight: normal; margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+.client_back{
+    width: 100%; 
+    .slide_wrap{
+        border-top: #e8dac7 1px solid; padding-top: 4rem;
+        .portion{
+            width: 100%; 
+            img{
+                width: 100%
+            }
+        }
+    }
+}

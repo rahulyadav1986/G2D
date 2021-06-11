@@ -1,0 +1,72 @@
+
+
+.faq_section{
+    width: 100%;
+    .avator{
+        position: relative; left: -42%;
+        
+    }
+    .custom_button{
+       margin-top: 4rem;
+        a{
+            margin: auto;
+        }
+    }
+}
+
+.accordion.custom{
+    width: 100%; float: left;
+}
+.accordion.custom .card{
+    margin-bottom: 16px; border: none; box-shadow: rgba(204,204,204,.75) 0 0 3rem; 
+} 
+
+.accordion.custom .card-header{
+     font-weight: 500; font-size: 1.9rem; text-decoration: none; outline-style: none; background-color: #fff;
+    box-shadow: rgba(204,204,204,.75) 0 0 3rem; padding: 2rem 8rem 2rem 3rem; position: relative; border: none;
+}
+
+.accordion.custom .card-header .fa{
+    width: 7.6rem; height: 100%; position: absolute; top: 0; right: 0; background-color: #46963d; color: #fff; content: ""; background-position: center center; background-repeat: no-repeat; cursor: pointer;
+}
+.accordion.custom .card-header .fa:before{ content: "";}
+.accordion.custom .card-header .fa.fa-plus{
+    background-image: url(../images/plus.png); 
+}
+.accordion.custom .card-header .fa.fa-minus{
+    background-image: url(../images/minus.png); 
+}
+
+.accordion.custom .card-body{
+    padding: 3rem;  font-size: 1.5rem; line-height: 3.2rem;
+    p{
+        font-size: 1.5rem;
+    }
+    ul{
+        li{
+            padding-left: 3.2rem; position: relative;
+            &::before{
+                width: 5px; height: 5px; background-color: #8c8c8c; position: absolute; top: 1.4rem; left: 0; content: ""; border-radius: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1499px){
+    .faq_section{
+        .avator{
+           left: 0; width: 100%;
+            
+        }
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .accordion{
+        &.custom{
+            .card-header{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

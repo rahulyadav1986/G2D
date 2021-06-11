@@ -1,0 +1,34 @@
+.default_section{
+    
+    p{
+        width: 100%; display: inline-block; margin-top: 2rem;
+    }
+}
+
+.about{
+    margin-bottom: 12rem;
+    img{
+        width: 100%; margin-bottom: 3rem;
+    }
+    .list{
+        margin-top: 2rem;
+        li{
+            margin-bottom: .5rem;
+            span{
+                color: #46963d; margin-right: 1.5rem;
+            }
+        }
+    }
+    .achivements{
+        margin-top: 3rem;
+       li{
+            flex-direction: column; margin-right:4rem; color: #000;
+            &:last-child{
+                margin-right: 0;
+            }
+            span{
+                font-size: 4rem; color: #46963d; font-weight: 600; margin-bottom: 1rem;
+            }
+       }
+    }
+}
